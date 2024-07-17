@@ -81,7 +81,7 @@ class HomeStudentMenuContent extends StatelessWidget {
                             style: AppFontStyle.regularLargeText,
                           ),
                           Text(
-                            "Video pembelajaran berisi materi tentang Informatika",
+                            "berisi tentang Informatika",
                             style: AppFontStyle.regularLargeText,
                           )
                         ],
@@ -192,7 +192,7 @@ class HomeStudentMenuContent extends StatelessWidget {
                               style: AppFontStyle.regularLargeText,
                             ),
                             Text(
-                              "Video pembelajaran berisi materi tentang Informatika",
+                              "Quiz pembelajaran berisi materi tentang Informatika",
                               style: AppFontStyle.regularLargeText,
                             )
                           ],
@@ -247,7 +247,7 @@ class HomeStudentMenuContent extends StatelessWidget {
                               style: AppFontStyle.regularLargeText,
                             ),
                             Text(
-                              "Video pembelajaran berisi materi tentang Informatika",
+                              "Cara menggunakan Aplikasi dan tombol logout",
                               style: AppFontStyle.regularLargeText,
                             )
                           ],

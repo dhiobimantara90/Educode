@@ -79,20 +79,26 @@ class _StudentQuizScoreContentState extends State<StudentQuizScoreContent> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _buildBackButton(),
-        SizedBox(height: 30.h),
-        Text("Nilai Siswa", style: AppFontStyle.headline4),
-        SizedBox(height: 20.h),
-        Text("Daftar nilai kuis yang dikerjakan siswa",
-            style: AppFontStyle.regularLargeText),
-        SizedBox(height: 10.h),
-        _scoreStudent(context),
-        SizedBox(height: 24.h),
-      ],
-    );
+    return SafeArea(
+        child: Scaffold(
+            body: Padding(
+      padding:
+          EdgeInsets.only(left: 24.w, right: 24.w, top: 12.h, bottom: 12.h),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _buildBackButton(),
+          SizedBox(height: 30.h),
+          Text("Nilai Siswa", style: AppFontStyle.headline4),
+          SizedBox(height: 20.h),
+          Text("Daftar nilai kuis yang dikerjakan siswa",
+              style: AppFontStyle.regularLargeText),
+          SizedBox(height: 10.h),
+          _scoreStudent(context),
+          SizedBox(height: 24.h),
+        ],
+      ),
+    )));
   }
 
   Widget _buildBackButton() {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quiz/ui/student_quiz_score/widgets/student_quiz_score_content.dart';
+import 'package:quiz/ui/student_quiz_score/widgets/student_quiz_score_list.dart';
 
 class StudentQuizScoreScreen extends StatelessWidget {
   const StudentQuizScoreScreen({super.key});
@@ -15,7 +15,7 @@ class StudentQuizScoreScreen extends StatelessWidget {
         child: const SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
-            children: [StudentQuizScoreContent()],
+            children: [StudentQuizScoreList()],
           ),
         ),
       )),
