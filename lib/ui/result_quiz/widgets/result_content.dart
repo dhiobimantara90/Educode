@@ -7,6 +7,7 @@ import 'package:quiz/data/local/shared_preference/quiz_preference.dart';
 import 'package:quiz/ui/home_student/home_student_screen.dart';
 import 'package:quiz/controller/quiz_controller.dart';
 import 'package:quiz/data/model/quiz_response.dart';
+import 'package:quiz/ui/quiz/quiz_screen.dart';
 import 'package:quiz/ui/quiz/widgets/quiz_content.dart';
 
 class ResultContent extends StatefulWidget {
@@ -103,12 +104,11 @@ class _ResultContentState extends State<ResultContent> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     CustomButton(
-                      widget: Text("Home", style: AppFontStyle.mediumLargeText),
+                      widget: Text("Quiz", style: AppFontStyle.mediumLargeText),
                       onPressed: () {
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(
-                              builder: (_) => const HomeStudentScreen()),
+                          MaterialPageRoute(builder: (_) => const QuizScreen()),
                         );
                       },
                       height: 70.h,

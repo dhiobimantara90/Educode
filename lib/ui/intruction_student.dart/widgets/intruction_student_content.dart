@@ -227,7 +227,7 @@ class IntructionStudentContent extends StatelessWidget {
       SizedBox(
         height: 20.h,
       ),
-      _logoutButton(context),
+      // _logoutButton(context),
     ]);
   }
 
